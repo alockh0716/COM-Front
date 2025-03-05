@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
-    "strict": true,
-    "allowJs": true,
     "noImplicitAny": false,
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
