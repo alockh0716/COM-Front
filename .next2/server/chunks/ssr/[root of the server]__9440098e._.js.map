@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 65, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Alock/OneDrive/Documents/front-end/pages/index.js"],"sourcesContent":["import { useState, useEffect } from 'react';\r\nimport axios from 'axios';\r\n\r\nexport default function Home() {\r\n  const [message, setMessage] = useState('');\r\n\r\n  useEffect(() => {\r\n    axios.get('https://shopping-backend.onrender.com/')\r\n      .then(response => setMessage(response.data))\r\n      .catch(error => console.error(error));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>Welcome to My Shopping Site</h1>\r\n      <p>{message}</p>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;;;;;AAEe,SAAS;IACtB,MAAM,CAAC,SAAS,WAAW,GAAG,CAAA,GAAA,mGAAA,CAAA,WAAQ,AAAD,EAAE;IAEvC,CAAA,GAAA,mGAAA,CAAA,YAAS,AAAD,EAAE;QACR,0GAAA,CAAA,UAAK,CAAC,GAAG,CAAC,0CACP,IAAI,CAAC,CAAA,WAAY,WAAW,SAAS,IAAI,GACzC,KAAK,CAAC,CAAA,QAAS,QAAQ,KAAK,CAAC;IAClC,GAAG,EAAE;IAEL,qBACE,qKAAC;;0BACC,qKAAC;0BAAG;;;;;;0BACJ,qKAAC;0BAAG;;;;;;;;;;;;AAGV","debugId":null}},
-    {"offset": {"line": 106, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
