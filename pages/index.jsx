@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function Home() {
+const Home = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
     axios.get('https://shopping-backend.onrender.com/')
-      .then(response => setMessage(response.data))
-      .catch(error => console.error(error));
+      .then((response) => setMessage(response.data))
+      .catch((error) => console.error(error));
   }, []);
 
   return (
@@ -16,4 +16,6 @@ export default function Home() {
       <p>{message}</p>
     </div>
   );
-}
+};
+
+export default Home;
